@@ -43,7 +43,7 @@ public class MbankWebTest {
         driver.findElement(By.cssSelector("[data-test-id='agreement'] span[role]")).click();
         driver.findElement(By.cssSelector("div button[type='button']")).click();
         String text = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText();
-        Assertions.assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
+        Assertions.assertEquals("ВВаша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
 
 }
